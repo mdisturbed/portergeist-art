@@ -56,11 +56,23 @@ Hey Chance! We built you a portfolio site. Before we go live, we want to make su
 24. Anything else you've been wanting for your brand online?
 
 ## 🚀 Launch
-25. What domain do you want? Ideas:
-    - portergeist.art
-    - portergeist-art.com
-    - Something else?
+25. What domain do you want? **portergeist.art** is available — **$4/year**, that's it.
 26. Ready to go live, or want to sit on it and make changes first?
+
+## 💰 What This Costs
+
+Here's the breakdown — no hidden fees, no monthly hosting bills:
+
+| Item | Cost |
+|------|------|
+| Custom portfolio site | **$0** |
+| Hosting (GitHub Pages) | **$0** |
+| SSL / HTTPS | **$0** |
+| Professional email (booking@portergeist.art) | **$0** |
+| Domain (portergeist.art) | **$4/year** |
+| **Total** | **$4/year** |
+
+You get a professional portfolio site with a custom domain and branded email for less than a coffee. We handle the tech — you focus on the art.
 
 ---
 
