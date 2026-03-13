@@ -20,9 +20,8 @@ const portfolioImages = [
 
 // Flash designs data (REPLACE WITH REAL IMAGES)
 const flashDesigns = [
-    { id: 1, src: 'images/flash-zappers-1.jpg', title: 'Zappers Board', size: 'Various', available: true },
-    { id: 2, src: 'images/flash-zappers-2.jpg', title: 'Zappers Board Pt. 2', size: 'Various', available: true },
-    { id: 3, src: 'images/flash-october.jpg', title: 'October Flash', size: 'Various', available: true },
+    { id: 1, src: 'images/flash-zappers-1.jpg', title: 'Zappers Board (Walk-In Event)', size: 'Various', available: true },
+    { id: 2, src: 'images/flash-zappers-2.jpg', title: 'Zappers Board Pt. 2 (Walk-In Event)', size: 'Various', available: true },
     { id: 4, src: 'images/flash-halloween-1.jpg', title: 'Halloween Flash', size: 'Various', available: true },
     { id: 5, src: 'images/flash-halloween-2.jpg', title: 'Halloween Flash Pt. 2', size: 'Various', available: true },
 ];
