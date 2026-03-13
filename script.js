@@ -279,10 +279,71 @@ revealElements.forEach(el => {
 });
 
 // ================================
+// THEME SWITCHER
+// ================================
+
+const themes = [
+    { id: 'current', name: 'Current' },
+    { id: 'bold-ink', name: 'Bold Ink' },
+    { id: 'traditional-flash', name: 'Traditional Flash' }
+];
+
+let currentThemeIndex = 0;
+
+// Load saved theme from localStorage
+function loadTheme() {
+    const savedTheme = localStorage.getItem('portergeist-theme');
+    if (savedTheme) {
+        const themeIndex = themes.findIndex(t => t.id === savedTheme);
+        if (themeIndex !== -1) {
+            currentThemeIndex = themeIndex;
+            applyTheme(themes[currentThemeIndex]);
+        }
+    }
+}
+
+// Apply theme to document
+function applyTheme(theme) {
+    const html = document.documentElement;
+    
+    // Remove all theme attributes
+    html.removeAttribute('data-theme');
+    
+    // Apply new theme (except 'current' which uses default)
+    if (theme.id !== 'current') {
+        html.setAttribute('data-theme', theme.id);
+    }
+    
+    // Update button label
+    const themeName = document.getElementById('themeName');
+    if (themeName) {
+        themeName.textContent = theme.name;
+    }
+    
+    // Save to localStorage
+    localStorage.setItem('portergeist-theme', theme.id);
+}
+
+// Cycle to next theme
+function cycleTheme() {
+    currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+    applyTheme(themes[currentThemeIndex]);
+}
+
+// Initialize theme switcher
+const themeSwitcher = document.getElementById('themeSwitcher');
+if (themeSwitcher) {
+    themeSwitcher.addEventListener('click', cycleTheme);
+}
+
+// ================================
 // INITIALIZE
 // ================================
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Load saved theme first
+    loadTheme();
+    
     renderPortfolio();
     renderFlash();
     
